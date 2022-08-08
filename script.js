@@ -52,9 +52,17 @@ cvv.addEventListener('keyup', function(){
 
 submitButton.addEventListener('click', function (){
     form.classList.toggle('hidden');
-    addedPage.classList.toggle('hidden');
+    // addedPage.classList.toggle('hidden');
+    addedPage.style.display = 'inherit';
 })
 continueButton.addEventListener('click', function (){
     form.classList.toggle('hidden');
-    addedPage.classList.toggle('hidden');
+    // addedPage.classList.toggle('hidden');
+    addedPage.style.display = 'none';
+    month.value = ''
+    year.value = ''
+    name.value = ''
+    cvv.value = ''
+    cardNumber.value = ''
+    
 })
