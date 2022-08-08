@@ -1,0 +1,278 @@
+.one{
+    background-image: linear-gradient( 156deg, rgb(59, 15, 76), rgb(59, 15, 76), rgb(83, 35, 57), rgb(48, 45, 90), rgb(59, 15, 76), rgb(59, 15, 76),  rgb(59, 15, 76));
+    flex: 1;
+}
+.two{
+    flex: 1.5;
+    /* margin-left: 1rem; */
+    background-color: white;
+    padding-left:20rem;
+    padding-top:5rem;
+}
+.first-card{
+    background-image: linear-gradient( 126deg, rgb(98, 67, 248), rgb(98, 67, 248), rgb(98, 67, 248), rgb(216, 110, 110), rgb(92, 144, 228), rgb(97, 5, 150), rgb(97, 5, 150));
+    position: absolute;
+    width: 20rem;
+    height: 11rem;
+    left: 12rem;
+    top: 10rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow:  grey 10px 0 101px -43px;
+    color: #fff;
+    text-transform: uppercase;
+    /* font-weight: bolder; */
+    font-size: 11px;
+}
+#card-number{
+    font-size: 25px;
+}
+#jane{
+    margin-top: 0.8rem;
+    width: fit-content;
+    display: inline-block;
+}
+#expire{
+    width: fit-content;
+    display: inline-block;
+    float: right;
+    margin-top: 13px;
+}
+
+.main .fa-solid{
+            font-size: 100px;   
+            margin: 5rem;   
+            background-image: linear-gradient( 156deg, rgb(93, 59, 231), rgb(93, 59, 231),  rgb(94, 4, 154));
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* font-weight: lighter; */
+           -webkit-text-fill-color:transparent;
+        }
+        
+.hidden{
+    display: none;
+}
+
+
+.body{
+    display: flex;
+    height: 30rem;
+    box-shadow: rgb(47, 47, 47) -1px 0px 17px -10px; 
+    margin: 7rem 5rem 0 3rem;
+    min-width: 78rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgba(169, 169, 169, 0.133);
+}
+.empt{
+    width: 1.4rem;
+    display: inline-block;
+    height: 1.4rem;
+    border: 2px white solid;
+    border-radius: 45px;
+    background-color: #fff;   
+}
+.small{
+    border: 1px white solid;
+    background: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    top: 1.4rem;
+    left: 3.4rem;
+}
+
+.sec-card{
+    background-image: linear-gradient(330deg, rgb(210, 211, 216), #fff);
+    width: 20rem;
+    height: 11rem;
+    left: 16.4rem;
+    margin: 0;
+    top: 23rem;
+    padding: 1rem;
+    box-shadow: 10px 20px 81px -43px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.emtee{
+    background-color: rgb(47, 47, 47);
+    width: 100%;
+    height: 2rem;
+    border: 2px solid rgb(47, 47, 47);
+    margin-left: -1rem;
+    padding: 0 0.87rem;
+}
+
+#cvv1{
+    background-color: rgb(173, 182, 191);
+    color: #fff;
+    font-size: 11px;
+    height: 1.5rem;
+    text-align: end;
+    box-sizing: border-box;
+    padding: 6px 1rem;
+}
+
+.empty{
+    height: 5px;
+    background-color: rgb(173, 182, 191);
+    /* flex: 1; */
+    display: inline-block;
+    
+}
+.EMPTY{
+    width: 45%;
+    margin-left: 5rem;
+    line-height: 10px;
+}
+input{
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    display: inline-block;
+    width: 3rem;
+    outline: none;
+    
+    /* outline: 1px solid black; */
+}
+input:focus{
+    border: 1px grey solid;
+    font-weight: lighter;
+}
+
+::placeholder{
+    color: rgb(234, 234, 234);
+}
+
+
+#name , #cardNumber{
+    width: 23rem;
+    height: 2rem;
+    /* font-weight: bolder; */
+}
+.inp , #cvv{
+    height: 2rem;
+    width: 3.6rem;
+    padding: 0 0.5rem;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 7fr 0fr 4fr ;
+    grid-gap: 0px;
+}
+.exp{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 5px; */
+    width: 50%;
+    display: inline-block;
+}
+
+.EXP{
+    width: 20rem;
+}
+
+#CVV{
+    /* width: 5rem; */
+    /* display: inline-block; */
+    margin-left: -11rem;
+}
+#cvv{
+    width: 11.5rem;
+}
+button{
+    background-color: rgb(34, 9, 48);
+    width: 24rem;
+    box-sizing: border-box;
+    height: 2.5rem;
+    color: #fff;
+    padding: 2px 0;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.error1 , .error2{
+    color: rgb(245, 51, 51);
+    font-size: 12px;
+}
+.error3{
+    font-size: 12px;
+    color: rgb(245, 51, 51);
+    float: right;
+    margin-left: -11rem;
+}
+.added{
+    font-family: monospace;
+    /* margin-left: 10rem; */
+    text-align: center;
+    color: rgb(34, 9, 48);
+    font-weight: bold;
+    width: auto;
+    margin: -4.2rem 0 0 -10.8rem;
+}
+.added :nth-child(3){
+    color: gray;
+    font-size: 25px;
+    
+}
+.added :nth-child(2){
+    font-size: 40px;
+    margin-top: -2rem;
+    word-spacing: -9px;
+    letter-spacing: 3px;
+}
+
+
+@media screen and (max-width: 400px) {
+    body{
+        transform: scale(1);
+        width: 100%;
+        margin: 0;
+    }
+    .body{
+        display: block;
+        margin: 0;
+        height: 10rem;
+        min-width: 24rem;
+        /* width: 1rem; */
+        /* flex-direction: column; */
+    }   
+    .one{
+        display: block;
+        width: 27rem;
+        margin: 0;
+        height: 18rem;
+    }
+
+    .first-card{
+        top:10rem;
+        left: 2rem;
+        z-index: 2;
+    }
+    .sec-card{
+        top: 4.099rem;
+        left: 5rem;
+        z-index: 1;
+    }
+    .two{
+        display: block;
+        width: 24rem;
+        height: 46rem;
+        margin: 0;
+    }
+    .added{
+        width: 100%;
+        margin-left: -18rem;
+        margin-top: 1rem;
+        display: block;
+
+
+ }
+}
