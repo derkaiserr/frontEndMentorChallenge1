@@ -264,7 +264,7 @@ button{
         z-index: 1;
     }
     #CVV{
-        margin-left: -16.5rem;
+        margin-left: -16.4rem;
     }
     .two{
         display: block;
@@ -278,10 +278,14 @@ button{
     }
     .added{
         width: 100%;
-        margin-left: -18rem;
+        margin-left: -19.2rem;
         margin-top: 1rem;
         display: none;
 
 
+ }
+
+ .submit{
+    margin-left: -0.2rem;
  }
 }
