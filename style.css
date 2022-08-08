@@ -248,20 +248,23 @@ button{
     }   
     .one{
         display: block;
-        width: 27.5rem;
+        width: 100%;
         margin: 0;
         height: 18rem;
     }
 
     .first-card{
         top:10rem;
-        left: 2rem;
+        left: 1rem;
         z-index: 2;
     }
     .sec-card{
         top: 4.099rem;
-        left: 5rem;
+        left: 4rem;
         z-index: 1;
+    }
+    #CVV{
+        margin-left: -16.5rem;
     }
     .two{
         display: block;
@@ -270,7 +273,7 @@ button{
         margin: 0;
     }
     .form{
-        margin-left: -18rem;
+        margin-left: -19rem;
         margin-top: 7rem;
     }
     .added{
