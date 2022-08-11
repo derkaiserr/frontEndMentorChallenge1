@@ -14,8 +14,8 @@
     position: absolute;
     width: 20rem;
     height: 11rem;
-    left: 12rem;
-    top: 10rem;
+    left: 14rem;
+    top: 13rem;
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 10px;
@@ -59,7 +59,7 @@
     display: flex;
     height: 30rem;
     box-shadow: rgb(47, 47, 47) -1px 0px 17px -10px; 
-    margin: 7rem 5rem 0 3rem;
+    margin: 10rem 5rem 0 5rem;
     min-width: 78rem;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -88,9 +88,9 @@ body{
     background-image: linear-gradient(330deg, rgb(210, 211, 216), #fff);
     width: 20rem;
     height: 11rem;
-    left: 16.4rem;
+    left: 18.4rem;
     margin: 0;
-    top: 23rem;
+    top: 26rem;
     padding: 1rem;
     box-shadow: 10px 20px 81px -43px;
     position: absolute;
@@ -118,7 +118,7 @@ body{
 }
 
 .empty{
-    height: 5px;
+    height: 3px;
     background-color: rgb(173, 182, 191);
     /* flex: 1; */
     display: inline-block;
@@ -127,7 +127,8 @@ body{
 .EMPTY{
     width: 45%;
     margin-left: 5rem;
-    line-height: 10px;
+    margin-top: 0.4rem;
+    line-height: 7px;
 }
 input{
     border: 1px solid rgb(234, 234, 234);
@@ -137,10 +138,15 @@ input{
     display: inline-block;
     width: 3rem;
     outline: none;
+    /* border-color: ; */
     
     /* outline: 1px solid black; */
 }
 input:focus{
+    border: 1px grey solid;
+    font-weight: lighter;
+}
+.cardd:focus{
     border: 1px grey solid;
     font-weight: lighter;
 }
@@ -181,7 +187,7 @@ input:focus{
 #CVV{
     /* width: 5rem; */
     /* display: inline-block; */
-    margin-left: -11rem;
+    margin-left: -9.8rem;
 }
 #cvv{
     width: 11.5rem;
@@ -202,11 +208,22 @@ button{
     color: rgb(245, 51, 51);
     font-size: 12px;
 }
+#name{
+    margin-bottom: 1rem;
+}
+
+.form button{
+    margin-top: -3.7rem;
+    margin-left: -0.3rem;
+}
 .error3{
     font-size: 12px;
     color: rgb(245, 51, 51);
     float: right;
-    margin-left: -11rem;
+    margin-left: -9.8rem;
+}
+.section{
+    margin-top: -1rem;
 }
 .added{
     font-family: monospace;
@@ -216,7 +233,8 @@ button{
     font-weight: bold;
     width: auto;
     display: none;
-    margin: -4.2rem 0 0 -10.8rem;
+    line-height: 26px;
+    margin: -3.8rem 0 0 -10.8rem;
 }
 .added :nth-child(3){
     color: gray;
@@ -230,66 +248,113 @@ button{
     letter-spacing: 3px;
 }
 
+.added button{
+    margin-top: 0.24rem;
+}
+.form{
+    margin-left: 1.95rem;
+    /* margin-top: 0.1rem; */
+}
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 425px) {
     body{
         transform: scale(1);
-        width: 100%;
-        margin: 0 0 0 0;
-        overflow-x: hidden;
+        width: 25rem;
+        /* margin: 0 -20rem 0 0; */
+        /* overflow:hidden; */
+    }
+    /* transform: scale(); */
+    html{
+        /* zoom: 0.87; */
+        /* width: 20rem; */
+        background-color: #fff;
+        
+    }
+
+    .emtee{
+        width: 111%;
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0;
     }
     .body{
         display: block;
         margin: 0;
         height: 10rem;
         min-width: 24rem;
-        /* width: 1rem; */
-        /* flex-direction: column; */
     }   
     .one{
+        overflow: hidden;
         display: block;
-        width: 100%;
+        width: 27.15rem;
         margin: 0;
         height: 18rem;
+    }
+    .section{
+        width: 24rem;
+    }
+    .exp{
+        width: 24rem;
+    }
+    .exp input{
+        width: 5rem;
     }
 
     .first-card{
         top:10rem;
-        left: 1rem;
+        left: 2rem;
         z-index: 2;
     }
     .sec-card{
         top: 4.099rem;
-        left: 4rem;
+        left: 5rem;
         z-index: 1;
     }
     #CVV{
-        margin-left: -16.4rem;
+        margin-left: -12.5rem;
+        
     }
     .two{
         display: block;
-        width: 24rem;
+        width: 27rem;
         height: 46rem;
-        margin: 0;
+        /* padding-left: 335px; */
+        box-sizing: border-box;
+        /* margin: 0 0px 0 30px; */
     }
     .form{
-        margin-left: -19rem;
+        margin-left: -18rem;
         margin-top: 7rem;
     }
+
+    .form button{
+        margin-left: -0.6rem;
+    }
     .added{
-        width: 100%;
-        margin-left: -19.2rem;
-        margin-top: 1rem;
+        width: 24rem;
+        line-height: 40px;
+        margin-left: -18.6rem;
+        margin-top: 0.7rem;
         display: none;
 
 
  }
+
+.added :nth-child(3){
+    width: 24rem;
+    letter-spacing: -1px;
+    word-spacing: -4px;
+    margin-top: 1rem;
+}
+
 
  .submit{
     margin-left: -0.2rem;
  }
 
  .error3{
-    margin-left: -16.4rem;
+    margin-left: -12.5rem;
  }
 }
