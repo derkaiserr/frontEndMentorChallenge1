@@ -5,6 +5,7 @@ let month = document.getElementById('month')
 let year = document.getElementById('year')
 let jane = document.getElementById('jane')
 let cvv = document.getElementById('cvv')
+let cvv1 = document.getElementById('cvv1')
 let expire = document.getElementById('expire')
 let cardError = document.querySelector('.error1')
 let dateError = document.querySelector('.error2')
@@ -37,17 +38,19 @@ cardNumber.addEventListener('keyup', function(){
 month.addEventListener('keyup', function(){
     if(month.value == ''){
     dateError.textContent = 'Can\'t be blank.';
-    // month.style.borderColor = 'red';
+    month.style.borderColor = 'red';
 }else{
-    month.style.borderColor = 'rgb(234, 234, 234)';
-        dateError.textContent = '';
-    }
+    month.style.borderColor = '';
+    dateError.textContent = '';
+}
 
 } )
 year.addEventListener('keyup', function(){
     if(year.value == ''){
-    dateError.textContent = 'Can\'t be blank.';
+        year.style.borderColor = 'red';
+        dateError.textContent = 'Can\'t be blank.';
     }else{
+        year.style.borderColor = '';
         dateError.textContent = '';
     }
 
@@ -56,7 +59,9 @@ year.addEventListener('keyup', function(){
 cvv.addEventListener('keyup', function(){
     if(cvv.value == ''){
         cvvError.textContent = 'Can\'t be blank.';
+        cvv.style.borderColor = 'red'
     }else{
+        cvv.style.borderColor = ''
         cvvError.textContent = '';
     }
 })
@@ -75,6 +80,9 @@ submitButton.addEventListener('click', function (){
     jane.textContent = namee.value
     if(namee.value == '')  jane.textContent = 'Jane Appleseed'
     if(year.value == '' || month.value == '') expire.textContent = '00/00'
+    if(cvv.value != '') {cvv1.textContent = '***'}else{
+        cvv1.textContent = '000'
+    }
     
 })
 continueButton.addEventListener('click', function (){
@@ -82,6 +90,7 @@ continueButton.addEventListener('click', function (){
     // addedPage.classList.toggle('hidden');
     addedPage.style.display = 'none';
     month.value = ''
+    cvv1.textContent = '000'
     year.value = ''
     namee.value = ''
     cardNumber.style.borderColor = ''
